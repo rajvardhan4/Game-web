@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&family=Roboto+Condensed&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hello, world!</title>
+    <style type="text/css">
+        /* ::selection {
+            background-color: aqua;
+            color: red;
+        } */
+        /* ::selection {
+            background-color: tomato;
+            color: yellowgreen;
+        } */
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #302C42;
+        }
+
+        .navcontant {
+            font-size: 12px;
+            font-family: Montserrat;
+            font-weight: 700;
+            color: #FFFFFF;
+            /* background-color: turquoise; */
+        }
+
+        .navbutton1 {
+            width: 154px;
+            height: 48px;
+            font-family: Montserrat;
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .navbutton2 {
+            font-family: Montserrat;
+            color: #211d31;
+            width: 155px;
+            height: 48px;
+            font-size: 12px;
+            font-weight: 700;
+            background-image: linear-gradient(to right, #8176AF, #C0B7E8);
+        }
+
+        .herosectiontext1 {
+            font-family: Montserrat;
+            font-size: 46px;
+            background-image: linear-gradient(to right, #7d6acc, #C0B7E8, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .herosectiontext2 {
+            font-family: Montserrat;
+            font-size: 46px;
+            background-image: linear-gradient(to left, #7464b8 50%, #C0B7E8, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .herosecpra {
+            font-family: Montserrat;
+            font-size: 13px;
+            color: #FFFFFF;
+        }
+
+        .herosecbutton {
+            width: 214px;
+            height: 48px;
+            font-size: 12px;
+            font-family: Montserrat;
+            background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+            color: #211d31;
+            font-weight: 700;
+        }
+
+        .ContactAsSec {
+            border-radius: 90px;
+            background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+            box-shadow: 0px 4px 4px 0 #C0B7E8;
+        }
+
+        .style {
+            /* width: 100%;
+            height: 120px; */
+            top: 794px;
+            left: 80px;
+            border-radius: 90px;
+            background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+        }
+
+        .sectiontext1 {
+            font-size: 30px;
+            font-weight: 700;
+            font-family: Montserrat;
+            color: #FFFFFF;
+        }
+
+        .sectiontext2 {
+            font-size: 25px;
+            font-weight: 100;
+            font-family: Montserrat;
+            color: #FFFFFF;
+        }
+
+        .sectionpra1 {
+            font-family: Montserrat;
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: 100;
+        }
+
+        .sectionpra3 {
+            font-family: Montserrat;
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: 100;
+        }
+
+        .cardimg {
+            border: 5px solid #302C42;
+            border-radius: 45px;
+            background-image: radial-gradient(circle, #45405f, #433D60, #1e1b2b);
+        }
+
+        .cardbtn {
+            font-family: Montserrat;
+            color: #211d31;
+            width: 155px;
+            height: 44px;
+            font-size: 12px;
+            font-weight: 700;
+            background-image: linear-gradient(to right, #8176AF, #C0B7E8);
+        }
+
+        .techbgimg {
+            width: 1278px;
+            height: 250px;
+            background-size: 100% 100%;
+            background-image: url(image/Techbgimg1.png);
+            display: grid;
+            place-content: center;
+        }
+
+        .wayesimg {
+            width: 100%;
+            height: 160px;
+            background-size: 100% 100%;
+            background-image: url(image/wayesimg.png);
+            z-index: -1;
+        }
+
+        .wayes {
+            width: 150px;
+            height: 150px;
+            z-index: -1;    
+            /* border-radius:50%; */
+            /* border:4px solid  #0D0D0D52; */
+            background-size: 100% 100%;
+            background-image: url(image/criclas.png);
+        }
+
+        .formbgcolor {
+            border-radius: 100px;
+            z-index: 1;
+            background-image: radial-gradient(circle, #403A5F, #211E2E);
+        }
+
+        /* .footersoc{
+            background-color: ;
+        } */
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid px-0">
+
+        <!-- header started -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand  ms-1" href="#">
+                    <img src="image/mainlogoimg.png" class="img-fluid" alt="">
+                    <img src="image/Frame.png" class="img-fluid" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-heart text-danger"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item navcontant mx-2">
+                            <a class="nav-link active text-white" aria-current="page" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item navcontant mx-2">
+                            <a class="nav-link active text-white" aria-current="page" href="#">SERVICES</a>
+                        </li>
+                        <li class="nav-item navcontant mx-2">
+                            <a class="nav-link active text-white" aria-current="page" href="#">TECHNOLOGIES</a>
+                        </li>
+                        <li class="nav-item navcontant mx-2">
+                            <a class="nav-link active text-white" aria-current="page" href="#">HOW TO</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex   me-4 row">
+                        <button type="button" class="btn btn-outline-light rounded-pill navbutton1 mx-3 col-6  ">CONTACT
+                            US</button>
+                        <button type="button" class="btn  rounded-pill navbutton2 mx-3 col-6  ">JOIN
+                            HYDRA</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- header started -->
+
+        <!-- Hero section started -->
+        <div class="container mt-5  ">
+            <div class="row">
+                <div class="col-12 col-md-6 ">
+                    <div class="row">
+                        <div class="col-12 col-md-12 herosectiontext1 fw-bolder">Dive Into The Depths</div>
+                        <div class="col-12 col-md-12 herosectiontext2 fw-bolder">Of Virtual Reality</div>
+                        <div class="col-12 col-md-12 sectionpra1 mt-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+                            sed do eiusmod tempor incididunt ut labore et dolore<br />
+                            nisl tincidunt eget. Lectus mauris eros in vitae .
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <div class="row">
+                                <div class="col-6 col-md-4">
+                                    <button type="button" class="btn  rounded-pill herosecbutton mx-3 col-6 mt-5 ms-0">
+                                        BUILD YOUR WORLD
+                                    </button>
+                                </div>
+                                <div class="col-6 col-md-8 mt-4">
+                                    <img src="image/herosecbuttonsideright.png" class="img-fluid " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 herosecimg mb-5">
+                    <img src="image/Mask group.png" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            <!-- Contact as section -->
+
+            <div class="conatiner mx-auto ms-5">
+                <div class="row style mt-5 w-100 h-75 ">
+                    <div class="col-12 col-md-10 mx-auto text-white">
+                        <div class="row mt-4 mb-2">
+                            <div class="col-12 col-md-4  ">
+                                <div class="row pt-3 mx-auto">
+                                    <div class="col-12 col-md-2">
+                                        <img src="image/contimg1.png" class="img-fluid" style="height:40px; width:30px;"
+                                            alt="">
+                                    </div>
+                                    <div class="col-12 col-md-10">
+                                        <h5>Pay Us a Visit</h5>
+                                        <p style="font-size:12px;">Union St, Seattle, WA 98101,</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4  ">
+                                <div class="row pt-3 mx-auto">
+                                    <div class="col-12 col-md-2">
+                                        <img src="image/contimg2.png" class="img-fluid" style="height:40px; width:30px;"
+                                            alt="">
+                                    </div>
+                                    <div class="col-12 col-md-10">
+                                        <h5>Give Us a Call</h5>
+                                        <p style="font-size:12px;">(110) 1111-1010</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4  ">
+                                <div class="row pt-3 mx-auto">
+                                    <div class="col-12 col-md-2">
+                                        <img src="image/contimg3.png" class="img-fluid" style="height:40px; width:30px;"
+                                            alt="">
+                                    </div>
+                                    <div class="col-12 col-md-10">
+                                        <h5>Send Us a Message</h5>
+                                        <p style="font-size:12px;">Contact@HydraVTech.com</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact as section closed -->
+
+            <!-- INTRODUCTION part  -->
+            <div class="container-fluid mt-5">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-12 col-md-6 ">
+                            <div class="row">
+                                <div class="col-12 sectiontext1 mt-4 ">INTRODUCTION</div>
+                                <div class="col-12 sectiontext2  mt-3">TO HYDRA VR
+                                    <img src="image/serciveimg.png" class="img-fluid">
+                                </div>
+                                <div class="col-12 mt-5 me-5 ">
+                                    <img src="image/introimg1.png" class=" img-fluid introimg1" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="row">
+                                <div class="col-12 sectionpra1 mt-4 ">Vitae sapien pellentesque habitant morbi
+                                    tristique senectus et netus et. Feugiat
+                                    nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo
+                                    quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+                                    lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus
+                                    vitae.</div>
+                                <div class="col-12 sectiontext2  mt-3">
+                                    <div class="row mt-5">
+                                        <div class="col-12 sectiontext1 mt-5 ms-2">ABOUT</div>
+                                        <div class="col-12 sectiontext2 ms-2">HYDRA VR</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-5">
+                                    <div class="row">
+                                        <div class="col-12  sectionpra3 ms-2 ">
+                                            Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis
+                                            rhoncus
+                                            urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices
+                                            gravida
+                                            dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing
+                                            at in.
+                                            Mattis aliquam faucibus purus in massa. Est placerat in egestas erat
+                                            imperdiet
+                                            sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam
+                                            etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet
+                                            cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha
+                                            retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam
+                                            sollicitudi
+                                            n tempor.
+                                        </div>
+                                        <div class="col-12  ">
+                                            <button type="button"
+                                                class="btn ms-2 rounded-pill herosecbutton mx-3 col-6 mt-5 ms-0">
+                                                LET’S GET IN TOUCH
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INTRODUCTION part End -->
+
+
+            <!-- sercive section started -->
+            <div class="container-fluid mt-5">
+                <div class="container1">
+                    <div class="row ">
+                        <div class="col-12 col-md-6 mt-5">
+                            <div class="row ">
+                                <div class="col-12 col-md-12 sectiontext1">WHY BUILD</div>
+                                <div class="col-12 col-md-12 sectiontext2">WITH HYDRA?
+                                    <img src="image/serciveimg.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 sectionpra3 mt-5">Vitae sapien pellentesque habitant morbi tristique
+                            senectus et netus et. Feugiat
+                            nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo
+                            quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+                            lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</div>
+                    </div>
+
+
+                    <!-- cards -->
+                    <div class="row  gx-4 ">
+                        <div class="col-12 col-md-3 cardimg  ">
+                            <div class="row">
+                                <div class="col-12 ">
+                                    <img src="image/cardimg1.png" class=" mx-4 mt-5 img-fluid" alt="">
+                                </div>
+                                <div class="col-12 sectiontext1 text-center mt-3 fs-4">SIMULATION
+                                    <img src="image/cardimg.png" alt="">
+                                </div>
+                                <div class="col-12 sectionpra3 text-center">Vitae sapien pellentesque habitant morbi
+                                    nunc. Viverra aliquet porttitor rhoncus
+                                    libero justo laoreet sit amet vitae.</div>
+                                <div class="col-12">
+                                    <button type="button" class="btn mx-5 mt-3 mb-4 cardbtn rounded-pill">TRY IT
+                                        NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 cardimg  ">
+                            <div class="row  ">
+                                <div class="col-12 ">
+                                    <img src="image/cardimg2.png" class=" mx-4 mt-5 img-fluid" alt="">
+                                </div>
+                                <div class="col-12 sectiontext1 text-center mt-3 fs-4">EDUCATION
+                                    <img src="image/cardimg.png" alt="">
+                                </div>
+                                <div class="col-12 sectionpra3 text-center">Vitae sapien pellentesque habitant morbi
+                                    nunc. Viverra aliquet porttitor rhoncus
+                                    libero justo laoreet sit amet vitae.</div>
+                                <div class="col-12">
+                                    <button type="button" class="btn mx-5 mt-3 mb-4 cardbtn rounded-pill">TRY IT
+                                        NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 cardimg  ">
+                            <div class="row  ">
+                                <div class="col-12 ">
+                                    <img src="image/cardimg3.png" class=" mx-4 mt-5 img-fluid" alt="">
+                                </div>
+                                <div class="col-12 sectiontext1 text-center mt-3 fs-4">SELF-CARE
+                                    <img src="image/cardimg.png" alt="">
+                                </div>
+                                <div class="col-12 sectionpra3 text-center">Vitae sapien pellentesque habitant morbi
+                                    nunc. Viverra aliquet porttitor rhoncus
+                                    libero justo laoreet sit amet vitae.</div>
+                                <div class="col-12">
+                                    <button type="button" class="btn mx-5 mt-3 mb-4 cardbtn rounded-pill">TRY IT
+                                        NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 cardimg  ">
+                            <div class="row  ">
+                                <div class="col-12 ">
+                                    <img src="image/cardimg4.png" class=" mx-4 mt-5 img-fluid" alt="">
+                                </div>
+                                <div class="col-12 sectiontext1 text-center mt-3 fs-4">OUTDOOR
+                                    <img src="image/cardimg.png" alt="">
+                                </div>
+                                <div class="col-12 sectionpra3 text-center">Vitae sapien pellentesque habitant morbi
+                                    nunc. Viverra aliquet porttitor rhoncus
+                                    libero justo laoreet sit amet vitae.</div>
+                                <div class="col-12">
+                                    <button type="button" class="btn mx-5 mt-3 mb-4 cardbtn rounded-pill">TRY IT
+                                        NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sercive section end -->
+
+
+            <!-- Tech section started -->
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row mt-5">
+                        <div class="col-12 techbgimg  mt-5">
+                            <h3 class="sectiontext1">TECHNOLOGIES & HARDWARE</h3>
+                            <h5 class="sectiontext2 text-center">USED BY HYDRA VR.</h5>
+                            <!-- <img src="image/Techbgimg1.png"class="img-fluid" alt=""> -->
+                        </div>
+                        <div class="col-12 mt-3">
+                            <div class="row mt-5">
+                                <div class="col-12 col-md-3"><img src="image/techimg2.png" class="img-fluid  " alt="">
+                                </div>
+                                <div class="col-12 col-md-3"><img src="image/techimg3.png" class="img-fluid ms-5 mt-5 "
+                                        alt=""></div>
+                                <div class="col-12 col-md-3"><img src="image/techimg4.png" class="img-fluid " alt="">
+                                </div>
+                                <div class="col-12 col-md-3"><img src="image/techimg5.png" class="img-fluid " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tech section started -->
+
+            <!-- wayes started -->
+            <div class="container-fluid mt-5">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-12 col-md-6 mt-5">
+                            <div class="row ">
+                                <div class="col-12 col-md-12 sectiontext1">WHY BUILD</div>
+                                <div class="col-12 col-md-12 sectiontext2">WITH HYDRA?
+                                    <img src="image/serciveimg.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mt-5">
+                            <p class="sectionpra3">Vitae sapien pellentesque habitant morbi tristique senectus et netus
+                                et. Feugiat
+                                nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo
+                                quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+                                lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid wayesimg mt-5">
+                <div class="container">
+                    <div class="row  d-flex justify-content-evenly">
+
+                        <div class="col-12 col-md-3 wayes">
+                            <img src="image/01.png" class="img-fluid mt-5 ms-4" alt="">
+                        </div>
+                        <div class="col-12 col-md-3 wayes">
+                            <img src="image/02.png" class="img-fluid mt-5 ms-4" alt="">
+                        </div>
+                        <div class="col-12 col-md-3 wayes">
+                            <img src="image/03.png" class="img-fluid mt-5 ms-4" alt="">
+                        </div>
+                        <div class="col-12 col-md-3 wayes">
+                            <img src="image/04.png" class="img-fluid mt-5 ms-4" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- wayes end -->
+
+            <!-- form started -->
+            <div class="container-fluid mt-5">
+                <div class="container formbgcolor  mt-5">
+                    <div class="row ">
+                        <div class="col-12 text-center sectiontext1 mt-5">JOIN HYDRA</div>
+                        <div class="col-12 text-center ">
+                            <img src="image/formimg.png" class="img-fluid w-25" alt="">
+                        </div>
+                        <div class="col-12 text-center sectiontext2 mt-2">Let’s Build Your VR Experience</div>
+                        <div class="col-12 mt-5">
+                            <div class="row ">
+                                <div class="col-12 col-md-6">
+                                    <input type="text" class="form-control rounded-pill btn-outline-light"
+                                        style="background-color: transparent; height:50px;" placeholder="First Name">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <input type="text" class="form-control rounded-pill btn-outline-light"
+                                        style="background-color: transparent; height:50px;" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-5">
+                            <div class="row ">
+                                <div class="col-12 col-md-6">
+                                    <input type="text" class="form-control rounded-pill btn-outline-light"
+                                        style="background-color: transparent; height:50px;" placeholder="Email">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <input type="text" class="form-control rounded-pill btn-outline-light"
+                                        style="background-color: transparent; height:50px;" placeholder="Phone Number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-5">
+                            <input type="text" class="form-control rounded-pill btn-outline-light"
+                                style="background-color: transparent; height:50px;" placeholder="Subject">
+                        </div>
+                        <div class="col-12 mt-5">
+                            <input class="form-control  btn-outline-light"
+                                style="background-color: transparent;width:100%;height:201px; border-radius:40px;"
+                                placeholder="Subject"></input>
+                        </div>
+                        <div class="col-12 mt-5 d-flex justify-content-center">
+                            <button type="button" class="btn mx-5 mt-3 mb-4 cardbtn rounded-pill ">SEND TO
+                                HYDRA</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- form ends  -->
+
+            <!-- footer started  -->
+            <div class="container-fluid mt-5">
+                <div class="container">
+                    <img src="image/formimg.png" class="img-fluid w-100 " alt="">
+                    <div class="row  mt-3">
+                        <div class="col-12 col-md-3">
+                            <img src="image/mainlogoimg.png" class="img-fluid me-5 mt-5 ms-4" alt="">
+                            <!-- <img src="image/footerimg.png" class="img-fluid ms-5" style="height: 190px;" alt=""> -->
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <img src="image/footercon.png" class="img-fluid h-75 mt-4" alt="">
+                            <!-- <img src="image/footerimg.png" class="img-fluid ms-5" style="height: 190px;" alt=""> -->
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <img src="image/footercon2.png" class="img-fluid h-75 mt-4 w-50" alt="">
+                            <!-- <img src="image/footerimg.png" class="img-fluid ms-5" style="height: 190px;" alt=""> -->
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="row">
+                                <div class="col-12 fs-6 text-light mt-3 fw-bolder" style="font-family:Montserrat;">
+                                    SOCIALIZE WITH HYDRA</div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-md-2 ">
+                                            <img src="image/footerf.png" class="img-fluid me-5 mt-4" alt="">
+                                        </div>
+                                        <div class="col-12 col-md-2 ">
+                                            <img src="image/footeri.png" class="img-fluid me-5 mt-4" alt="">
+                                        </div>
+                                        <div class="col-12 col-md-2 ">
+                                            <img src="image/footerlink.png" class="img-fluid me-5 mt-4" alt="">
+                                        </div>
+                                        <div class="col-12 col-md-2 ">
+                                            <img src="image/footerp.png" class="img-fluid me-5 mt-4" alt="">
+                                        </div>
+                                        <div class="col-12 col-md-2 ">
+                                            <img src="image/footertwi.png" class="img-fluid me-5 mt-4" alt="">
+                                        </div>
+                                        <div class="col-12 col-md-2 ">
+                                            <img src="image/footery.png" class="img-fluid me-5 mt-4" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="button" class="btn mx-5 mt-4 mb-4 rounded-pill text-dark fw-bold"
+                                        style="background-image: linear-gradient(to right, #8176AF, #C0B7E8); font-family:Montserrat; font-size:11px;">BUILD
+                                        YOUR WORLD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="image/formimg.png" class="img-fluid w-100 " alt="">
+                    <p class="text-center text-white sectiontext1 fw-light mt-3 fs-6">2023 © HYDRA LANDING PAGE - BY
+                        ZINE. E. FALOUTI - ALL RIGHTS RESERVED </p>
+                </div>
+            </div>
+            <!-- footer end  -->
+        </div>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
